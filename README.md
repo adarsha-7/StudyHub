@@ -4,6 +4,6 @@ StudyHub, a dedicated online platform designed to promote easier access for stud
 # Tools and Technologies
 This project was built using the MERN stack.
 
-## Project info
+### Project info
 This project was originally made by my project group for our 3rd semester project.
 This particular repository only consists of the works that were done solely by me.
