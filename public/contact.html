@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link id="themeStylesheet1" rel="stylesheet" href="/styles/contact-dark.css">
+        <link id="themeStylesheet2" rel="stylesheet" href="/styles/common-dark.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="header">
+            <div class="header-logo">StudyHub</div>
+            <div class="header-menus">
+                <div class="menus" id="menus-home"><a href="#">Home</a></div>
+                <div class="menus" id="menus-faculties"><a href="#">Faculties</a></div>
+                <div class="menus" id="menus-contact"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+
+        <div class="main-section">
+            <div class="contact-us">
+                <h2>Contact Us:</h2>
+                <div id="short-info">
+                    <div id="short">
+                        <p>We’d love to hear from you! Whether you have questions, feedback, or need assistance, feel free to reach out using the following methods:</p>
+                    </div>
+                    <ul id="list">
+                        <div class="f">
+                            <li><p id="phone">📞 <b>Phone : </b><a href="tel:9808003690">+977 987654321</a></p></li>
+                        </div>
+                        <div class="f">
+                            <li><p id="email">✉️ <b>Email : </b><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">studyhub@gmail.com</a></p></li>
+                        </div>
+                        <div class="f">
+                            <li><p id="address">🗺️ <b>Address : </b><a href="https://maps.app.goo.gl/uESoo32SGmZ13ZRQA" target="_blank">Kathmandu University, Dhulikhel, Kavre</a></p></li>
+                        </div>
+                        <div class="f">
+                            <li><p id="hours">🕒 <b>Hours : </b>Monday to Friday, 9:00 AM - 4:00 PM</p></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="map">
+                <h2>Map:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3535.1664420861302!2d85.53619527451664!3d27.61936132936835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKathmandu%20University%20block%209!5e0!3m2!1sen!2sus!4v1736075296279!5m2!1sen!2sus" 
+                        referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+            </div>
+        </div>
+        
+        <footer style="height: 200px; gap: 30px;">
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+    
+            <div class="quick-links">
+                <a href="https://kusos.ku.edu.np/" target="_blank">KUSOS</a>
+                <a href="https://kusoe.ku.edu.np/" target="_blank">KUSOE</a>
+                <a href="https://www.ku.edu.np/" target="_blank">KU</a>
+                <a href="https://cse.ku.edu.np/" target="_blank">DoCSE</a>
+            </div>
+            <div class="copyright">© 2025 StudyHub</div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const themeStylesheet1 = document.getElementById("themeStylesheet1");
+            const themeStylesheet2 = document.getElementById("themeStylesheet2");
+
+            const currentTheme = localStorage.getItem("theme") || "light";
+            themeStylesheet1.href = currentTheme === "dark" ? "/styles/contact-dark.css" : "/styles/contact.css";
+            themeStylesheet2.href = currentTheme === "dark" ? "/styles/common-dark.css" : "/styles/common.css"
+            });
+        </script>
+        <script src="/scripts/common.js"></script>
+        <script src="/scripts/auth.js"></script>
+    </body>
+</html>

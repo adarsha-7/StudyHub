@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StudyHub</title>
+        <link id="themeStylesheet1" rel="stylesheet" href="/styles/ask-dark.css">
+        <link id="themeStylesheet2" rel="stylesheet" href="/styles/common-dark.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="header">
+            <div class="header-logo">StudyHub</div>
+            <div class="header-menus">
+                <div class="menus" id="menus-home"><a href="#">Home</a></div>
+                <div class="menus" id="menus-faculties"><a href="#">Faculties</a></div>
+                <div class="menus" id="menus-contact"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+
+        <button class="user">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+            <a id="answer" href="#">Discussions</a>
+            <a id="ask" href="#">Ask</a>
+        </nav>
+
+        <form class="add-menu">
+            <input type="text" class="add-title" name="title" placeholder="Title" required>
+            <textarea type="text" class="add-value" name="value" placeholder="Content" required></textarea>
+            <button class="add-button" type="submit">Add Question</button>
+            <p class="add-message"></p>
+        </form>
+
+        <div class="delete-container">
+            <h3 class="delete-title">Delete this Question?</h3>
+            <div class="delete-form">
+                <button class="cancel-button" type="button">Cancel</button>
+                <button class="delete-button" type="button">Delete</button>
+            </div>
+            <p class="delete-message"></p>
+        </div>
+        
+        <div class="main">
+            <aside class="sidebar">
+                <a id="sb-answer" href="#"><i class="fas fa-comment-dots"></i> <span>Discussions</span></a>
+                <a id="sb-ask" href="#"><i class="fas fa-question-circle"></i> <span>Ask</span></a>
+            </aside>
+            
+            <div class="main-section">
+                <form class="main-section-1">
+                    <input class="search-bar" name="item" type="text" placeholder="Search for Questions.....">
+                    <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="navigation">
+                    <a id="previous" href="#"><i class="fas fa-chevron-left"></i></a>
+                    <span class="current-page"></span>
+                    <a id="next" href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="main-section-2">
+                    <p class="your-questions">Your Questions</p>
+                </div>
+            </div>
+
+            <button class="add-question"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <footer>
+            <div class="copyright">© 2025 StudyHub</div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="/scripts/ask.js"></script>
+        <script src="/scripts/common.js"></script>
+        <script src="/scripts/auth.js"></script>
+    </body>
+</html>

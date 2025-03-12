@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - StudyHub</title>
+        <link rel="stylesheet" href="/styles/new-account.css">
+        <link rel="stylesheet" href="/styles/common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="header">
+            <div class="header-logo">StudyHub</div>
+            <div class="header-menus">
+                <div class="menus" id="menus-home"><a href="#">Home</a></div>
+                <div class="menus" id="menus-faculties"><a href="#">Faculties</a></div>
+                <div class="menus" id="menus-contact"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+
+        <div class="main-section">
+            <div class="container">
+                <h2 class="title">New Account Detected</h2>
+                <p class="message-1">You haven't signed up with this email yet.</p>
+                <p class="message-2">Would you like to create a new account?</p>
+                <form class="form" action="/login/create" method="POST">
+                    <input class="email-input" type="text" name="email">
+                    <button class="button" type="submit">Create new Account</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">© 2025 StudyHub</div>
+        </footer>
+        <script>
+            const URLParams = new URLSearchParams(window.location.search)
+            const email = URLParams.get('email');
+            const hiddenEmailField = document.querySelector('.email-input');
+            hiddenEmailField.value = email;
+        </script>
+    </body>
+</html>

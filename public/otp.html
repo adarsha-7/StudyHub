@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - StudyHub</title>
+        <link rel="stylesheet" href="/styles/otp.css">
+        <link rel="stylesheet" href="/styles/common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="header">
+            <div class="header-logo">StudyHub</div>
+            <div class="header-menus">
+                <div class="menus" id="menus-home"><a href="#">Home</a></div>
+                <div class="menus" id="menus-faculties"><a href="#">Faculties</a></div>
+                <div class="menus" id="menus-contact"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+
+        <div class="main-section">
+            <div class="otp-container">
+                <h2 class="otp-title">OTP verification</h2>
+                <p class="otp-message-default">For verfication, please enter the OTP sent to</p>
+                <p class="otp-message-email"></p>
+                <p class="otp-message-expire">(OTP expires in 60 seconds)</p>
+                <form class="otp-form" action='/login/verify' method="GET"> 
+                    <input class="otp-input" type="text" name="otp" placeholder="OTP" required>
+                    <input class="email-input" type="text" name="email">
+                    <button class="otp-button" type="submit">Verify</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">© 2025 StudyHub</div>
+        </footer>
+        <script>
+            const URLParams = new URLSearchParams(window.location.search)
+            const email = URLParams.get('email');
+            document.querySelector('.otp-message-email').innerText = `${email}`
+
+            const hiddenEmailField = document.querySelector('.email-input');
+            hiddenEmailField.value = email;
+        </script>
+    </body>
+</html>

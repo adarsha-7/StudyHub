@@ -1,0 +1,345 @@
+.main {
+    display: flex;
+    gap: 15px;
+    margin: 5px 10px 0px 10px;
+    padding: 5px 10px 20px 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 10px 8px 0px 8px;
+    border-radius: 10px;
+    background-color: rgb(25,25,25);
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgb(160,160,160) ;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar a:hover {
+    background-color: rgb(40,40,40);
+    border-radius: 5px;
+}
+
+
+.user {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    width: 40px; 
+    height: 30px; 
+    border: 2px solid rgb(50,50,50) ;
+    border-radius: 20px;
+    outline: none;
+    color: rgb(130,130,130) ;
+    background-color: rgb(27,27,27);
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: rgb(20,20,20) ; 
+}
+
+.nav-menu {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    visibility: hidden;
+    width: 150px;
+    height: 80px;
+    background-color: rgb(25,25,25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(160,160,160) ;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    background-color: rgb(40,40,40);
+    border-radius: 5px;
+}
+
+.nav-menu.active {
+    visibility: visible;
+}
+
+.main-section{
+    border-radius: 10px;
+    width: 85%;
+	min-height: 1000px;
+	height: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 30px 30px 20px 30px;
+    justify-content:flex-start;
+    align-items:center;
+    gap: 20px;
+    background-color: rgb(30,30,30);
+    font-size: 15px;
+}
+.main-section-1{
+    width:100%;
+	height: 10%;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.navigation{
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 50px;
+}
+.navigation i {
+	color: rgb(160,160,160)
+}
+.main-section-2{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.question-block{
+    background-color: rgb(20,20,20);
+	padding: 15px;
+	border-radius: 5px;
+	font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.question-title{
+	font-weight: 400;
+}
+.question-detail, .answer-detail{
+    font-size: 12px;
+}
+.question-poster, .question-date, .answer-poster, .answer-date{
+    font-weight: 400;
+	color: rgb(150, 149, 149)
+}
+.add-answer{
+    height: 30px;
+    width: 100px;
+	background-color: rgb(56, 56, 64);
+    color: rgb(215, 224, 236);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.add-answer:hover{
+    cursor: pointer;
+	background-color: rgb(48, 48, 54);
+}
+.show-answers, .hide-answers{
+    font-size: 12px;
+    font-weight: 400;
+	color: rgb(150, 149, 149);
+    margin-top: 5px;
+    margin-left: 5px;
+    display: none;
+    gap: 5px;
+    align-items: center;
+}
+.show-answers.active, .hide-answers.active{
+    display: flex;
+}
+.show-answers:hover, .hide-answers:hover{
+    cursor: pointer;
+}
+.answer-block{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.search-bar{
+    width:80%;
+    border:1px solid rgb(50,50,50);
+    border-radius:20px;
+    height:38px;
+    outline:none;
+    text-align:left;
+    padding-left:20px;
+    color: rgb(200,200,200);
+    background-color: rgb(40,40,40) ;
+}
+.search-button{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:0.5px solid #2E2E2E;  
+    outline:none;
+    margin-left: 10px;
+    color: rgb(100,100,100) ;
+    background-color: rgb(40,40,40) ;
+    border: 1px solid rgb(50,50,50) ;
+}
+.search-button:hover{
+    cursor:pointer; 
+    background-color: rgb(25,25,25);
+}
+
+.add-menu {
+    font-size: 15px;
+    font-weight: 400px;
+    border: 1px solid rgb(50,50,50);
+    position: fixed;  
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 1000px;
+    height: 750px;
+    background-color: rgb(25,25,25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px 15px 5px 15px;
+    gap: 15px;
+    z-index: 2;
+}
+.add-value {
+    border: 1px solid rgb(50,50,50);
+    color: rgb(190, 196, 205);
+    width: 100%;
+    border-radius: 5px;
+    height: 95%;
+    outline: none;
+    text-align: left;
+    padding: 15px 15px;
+    background-color: rgb(40,40,40) ;
+    font-size: 14px;
+    line-height: 1.2;
+    resize: vertical; 
+    white-space: pre-wrap; 
+    overflow-y: auto;
+    box-sizing: border-box; 
+}
+.add-button{
+    height: 5%;
+    width: 100%;
+	background-color: rgb(48, 48, 54);
+    color: rgb(190, 196, 205);
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.add-button:hover{
+	background-color: rgb(40, 40, 45);
+}
+
+.add-menu.active {
+    visibility: visible;
+}
+
+.add-message{
+    height: 20px;
+    font-size: 12px;
+    color: #082748;
+    align-self: center;
+}
+.your-questions{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .main-section-1{
+        font-size:30px;
+    }
+    .main-section{
+        width:80%;
+    }
+    .sidebar{
+        width:20%;
+    }
+    .main {
+        gap: 10px;
+        margin: 5px 5px 0px 5px;
+        padding: 0px 10px 20px 10px;
+    }
+    .add-menu {
+        font-size: 14px;
+        width: 700px;
+    }
+ }
+
+ @media (max-width: 800px) {
+    .main-section-1{
+        font-size:25px;
+    }
+    .main-section{
+        width:75%;
+    }
+    .sidebar{
+        width:25%;
+    }
+    .main {
+        gap: 8px;
+        margin: 5px 0px 0px 0px;
+        padding: 0px 10px 20px 10px;
+    }
+	.search-bar{
+		width: 70%;
+	}
+    .your-questions{
+        font-size: 16px;
+    }
+    .add-menu {
+        font-size: 14px;
+        width: 500px;
+    }
+ }
+
+ @media (max-width: 600px) {
+    .main-section{
+        width:100%;
+        margin-top: 10px;
+    }
+    .sidebar{
+        display: none;
+        width:0%;
+    }
+    .main {
+        padding: 0px 5px 20px 5px;
+    }
+	.search-bar{
+		width: 80%;
+	}
+    .add-menu {
+        font-size: 14px;
+        width: 400px;
+    }
+    .user{
+        top:100px;
+        right: 20px
+    }
+ }

@@ -1,0 +1,81 @@
+.main-section {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otp-container {
+    width: 350px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.otp-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #082748;
+}
+.otp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.otp-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.otp-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #082748;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.otp-button:hover {
+    background-color: #0a396b;
+}
+.otp-message-default {
+    height: 20px;
+    font-size: 14px;
+    color: #0a396b;
+}
+.otp-message-expire {
+    height: 20px;
+    font-size: 14px;
+    color: #0a396b;
+    margin-bottom: 10px;
+}
+.otp-message-email{
+    height: 20px;
+    font-size: 14px;
+    color: #0a396b;
+}
+
+.email-input{
+    display: none;
+  }
+  
+
+@media (max-width: 1100px) {
+ }
+
+ @media (max-width: 800px) {
+ }
+
+ @media (max-width: 560px) {
+    .otp-container {
+        width: 90%;
+    }
+ }
+

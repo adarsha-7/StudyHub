@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StudyHub</title>
+        <link id="themeStylesheet1" rel="stylesheet" href="/styles/user-details-dark.css">
+        <link id="themeStylesheet2" rel="stylesheet" href="/styles/common-dark.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="header">
+            <div class="header-logo">StudyHub</div>
+            <div class="header-menus">
+                <div class="menus" id="menus-home"><a href="#">Home</a></div>
+                <div class="menus" id="menus-faculties"><a href="#">Faculties</a></div>
+                <div class="menus" id="menus-contact"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+
+        <div class="main-section">
+            <div class="main-section-1">Personal Details</div>
+            <form class="main-section-2" id="form">
+                <div class="pairs"><p class="key">First Name:</p><input class="input" type="text" name="fname" required></div>
+                <div class="pairs"><p class="key">Last Name: </p><input class="input" type="text" name="lname" required></div>
+                <div class="pairs"><p class="key">Course:    </p><input class="input" type="text" name="course" required></div>
+                <div class="pairs"><p class="key">Batch:     </p><input class="input" type="text" name="batch" required></div>
+                <button class="submit-button" type="submit">Submit</button>
+			</form>
+            <p class="submit-message"></p>
+        </div>
+
+        <footer>
+            <div class="copyright">© 2025 StudyHub</div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="/scripts/user-details.js"></script>
+        <script src="/scripts/auth.js"></script>
+        <script src="/scripts/common.js"></script>
+    </body>
+</html>

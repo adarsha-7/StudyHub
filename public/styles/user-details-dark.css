@@ -1,0 +1,80 @@
+.main-section{
+    height:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:400px;
+    gap: 50px;
+}
+.main-section-1{
+    font-size:30px;
+    font-weight: 450;
+}
+.main-section-2{
+    width:50%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+.input {
+    height: 35px;
+    outline:none;
+    text-align:left;
+    background-color: rgb(40,40,40) ;
+    width: 90%;
+    padding: 10px;
+    border:1px solid rgb(50,50,50);
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(130,130,130) ;
+}
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(6, 27, 48);
+    color: rgb(200,200,200) ;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: rgb(7, 35, 62);
+}
+.submit-message{
+    height: 20px;
+    font-size: 12px;
+    color: rgb(57, 103, 150);
+}
+
+.pairs {
+    display: flex;
+    gap: 15px;
+}
+
+.key {
+    width:20%;
+    align-self: center;
+}
+
+
+ @media (max-width: 1100px) {
+    .main-section-1{
+        font-size:30px;
+    }
+    .main-section-2{
+        width: 70%;
+    }
+ }
+
+ @media (max-width: 800px) {
+    .main-section-1{
+        font-size:25px;
+    }
+ }
+
+ @media (max-width: 560px) {
+    
+ }

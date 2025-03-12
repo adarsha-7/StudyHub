@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faculties</title>
+        <link id="themeStylesheet1" rel="stylesheet" href="/styles/faculties-dark.css">
+        <link id="themeStylesheet2" rel="stylesheet" href="/styles/common-dark.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="header">
+            <div class="header-logo">StudyHub</div>
+            <div class="header-menus">
+                <div class="menus" id="menus-home"><a href="#">Home</a></div>
+                <div class="menus" id="menus-faculties"><a href="#">Faculties</a></div>
+                <div class="menus" id="menus-contact"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+
+        <div class="main-section">
+            <img src="/images/faculty.png" alt="DoCSE Faculty">
+            <div class="main">
+                <h2>Faculty</h2>
+                <div class="name-list">
+                    <div class="position" id="professor">
+                        <h4>Professor</h4>
+                        <ul class="name">
+                            <li>Prof. Dr. Manish Pokharel (manish@ku.edu.np) Dean School  of Engineering</li>
+                            <li>Prof. Sudan Jha, PhD (sudan.jha@ku.edu.np)</li>
+                            <li>Prof. Dr. Bal Krishna Bal (bal@ku.edu.np),  Associate Dean School of Engineering</li>
+                            <li>Prof. Dr. Gajendra Sharma (gajendra.sharma@ku.edu.np)</li>
+                        </ul>
+                    </div>
+                    <div class="position" id="associate-professors">
+                        <h4>Associate Professors</h4>
+                        <ul class="name">
+                            <li>Dr. Rabindra Bista (rbista@ku.edu.np)</li>
+                            <li>Dr. Sushil Shrestha (sushil@ku.edu.np) , Lead Researcher at Digital Learning Research Lab</li>
+                        </ul>
+                    </div>
+                    <div class="position" id="assistant-professors">
+                        <h4>Assistant Professors</h4>
+                        <ul class="name">
+                            <li>Manoj Shakya (manoj@ku.edu.np)</li>
+                            <li>Pankaj Raj Dawadi (pdawadi@ku.edu.np) Acting Head of Department</li>
+                            <li>Santosh Khanal (skhanal@ku.edu.np) Acting Head of Helth Informatics Department</li>
+                            <li>Dhiraj Shrestha (dhiraj@ku.edu.np) </li>
+                            <li>Sushil Nepal (sushilnepal@ku.edu.np) (Internship and Placement Coordinator)</li>
+                            <li>Sameer Tamrakar (sameer.tamrakar@ku.edu.np) </li>
+                            <li>Nabin Ghimire (nabin.ghimire@ku.edu.np) </li>
+                            <li>Dr. Rajani Chulyadyo (rajani.chulyadyo@ku.edu.np)</li>
+                            <li>Dr. Prakash Poudyal (prakash@ku.edu.np)
+                            <li>Deni Shahi (deni.shahi@ku.edu.np)</li>
+                            <li>Praynita Karki (praynita.karki@ku.edu.np)</li>
+                            <li>Trailokya Ojha (trailokya.ojha@ku.edu.np)</li>
+                        </ul>
+                    </div>
+                    <div class="position" id="lecturers">
+                        <h4>Lecturers</h4>
+                        <ul class="name">
+                            <li>Amrit Dahal (amrit.dahal@ku.edu.np)</li>
+                            <li>Subhadra Joshi (subhadra.joshi@ku.edu.np)</li>
+                            <li>Sanjog Sigdel (sanjog.sigdel@ku.edu.np)</li>
+                            <li>Suman Shrestha (shrestha.suman@ku.edu.np)</li>
+                        </ul>
+                    </div>
+                    <div class="position" id="teaching-assistant">
+                        <h4>Teaching Assistant </h4>
+                        <ul class="name">
+                            <li>Milan Dahal (milan.dahal@ku.edu.np)</li>
+                        </ul>
+                    </div>
+                    <div class="position" id="lab-technicians">
+                        <h4>Lab Technicians</h4>
+                        <ul class="name">
+                            <li>Rajendra Banjara (rajendra@ku.edu.np)</li>
+                            <li>Bibas Neupane (bibas.neupane@ku.edu.np)</li>
+                        </ul>
+                    </div>
+                    <div class="position" id="administrative-staff">
+                        <h4>Administrative Staff</h4>
+                        <ul class="name">
+                            <li>Laxmi Thapa (laxmithapa@ku.edu.np) </li>
+                        </ul>
+                    </div>
+                    <div class="position" id="supporting-staff">
+                        <h4>Lab Technicians</h4>
+                        <ul class="name">
+                            <li>Chandika Oli</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="copyright">© 2025 StudyHub</div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const themeStylesheet1 = document.getElementById("themeStylesheet1");
+            const themeStylesheet2 = document.getElementById("themeStylesheet2");
+
+            const currentTheme = localStorage.getItem("theme") || "light";
+            themeStylesheet1.href = currentTheme === "dark" ? "/styles/faculties-dark.css" : "/styles/faculties.css";
+            themeStylesheet2.href = currentTheme === "dark" ? "/styles/common-dark.css" : "/styles/common.css"
+            });
+        </script>
+        <script src="/scripts/common.js"></script>
+        <script src="/scripts/auth.js"></script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - StudyHub</title>
+        <link rel="stylesheet" href="/styles/login.css">
+        <link rel="stylesheet" href="/styles/common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="header">
+            <div class="header-logo">StudyHub</div>
+            <div class="header-menus">
+                <div class="menus" id="menus-home"><a href="#">Home</a></div>
+                <div class="menus" id="menus-faculties"><a href="#">Faculties</a></div>
+                <div class="menus" id="menus-contact"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+
+        <div class="main-section">
+            <div class="login-container">
+                <h2 class="login-title">Login to StudyHub</h2>
+                <form class="login-form" action="/login/sendmail" method="GET">
+                    <input class="login-input" type="text" name="email" placeholder="KU email" required>
+                    <button class="login-button" type="submit">Login</button>
+                </form>
+                <p class="login-message"></p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">© 2025 StudyHub</div>
+        </footer>
+        <script src="/scripts/login.js"></script>
+    </body>
+</html>
