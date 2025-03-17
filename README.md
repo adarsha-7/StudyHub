@@ -1,5 +1,5 @@
 # StudyHub
-StudyHub, a dedicated online platform designed to promote easier access for students by centralizing departmental study materials and academic resources within one easy-to-access platform. It also helps the students stay updated with the latest news and notices related to their department, as well as facilitate with study by giving them a platform to ask related questions and answer other fellow students. 
+StudyHub is a platform designed for students of Computer department of KU to engage in discussions with peers and seniors through a forum-like system. The website also incorporates robust JWT-based authentication for secure user access.
 
 # Tools and Technologies
 This project was built using the MERN stack.
